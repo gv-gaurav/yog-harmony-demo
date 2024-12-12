@@ -4,3 +4,7 @@ window.ityped.init(document.querySelector('.ityped'),{
     backSpeed: 150,
     loop: true
 })
+
+
+
+
