@@ -398,7 +398,7 @@ p{
 /* Home Page Our Services Section Style */
 
 .services_section{
-    padding: 120px 0 130px;
+    padding: 80px 0 15px;
     position: relative;
 }
 .services_section .services_content{
@@ -1692,7 +1692,7 @@ textarea {
     box-shadow: 1px 1px 50px rgb(0 0 0 / 7%);
 }
 .vision_content{
-    padding-top: 150px;
+    padding-top: 85px;
     padding-left: 40px;
 }
 .vision_content h5{
@@ -2198,76 +2198,7 @@ textarea {
 /* custome code start  */
 
 
-.containers {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 20px;
-  }
-  
-  .box {
-    position: relative;
-    width: 300px;
-    /* height: 300px; */
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #ECF6FA;
-    cursor: pointer;
-    perspective: 1000px; 
-  }
-  
-  .front, .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; 
-    transition: transform 0.6s ease;
-  }
-  
-  .front {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #B32235;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    z-index: 2;
-  }
-  
-  .back {
-    transform: rotateY(180deg);
-  }
-  
-  .back img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .box:hover .front {
-    transform: rotateY(-180deg);
-  }
-  
-  .box:hover .back {
-    transform: rotateY(0); 
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .box {
-      width: 90%;
-      height: 150px;
-    }
-  }
+
   
   /* custome code end  */
 /* whatsapp button css code start  */
@@ -2304,6 +2235,151 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     padding: 15px 15px;
 }
 
+
+
+.knowmore{
+    border: none;
+    padding: 25px 15px;
+    border-radius: 10px;
+    background-color: #824F83;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.knowmore:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #8c1e8e;
+}
+
+
+
+
+
+.sectiona {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sectiona .image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sectiona .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sectiona .content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #623C63;
+    color: #fff;
+}
+
+.sectiona .content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.sectiona .content p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .sectiona {
+        flex-direction: column;
+    }
+
+    .sectiona .content {
+        text-align: center;
+    }
+}
+
+
+
+/* gallery section code start  */
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1250px;
+    padding: 10px;
+  }
+
+  .card {
+    width: calc(25% - 20px);
+    aspect-ratio: 4 / 5;
+    perspective: 10000px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card-front img,
+  .card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+    background-color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: calc(100% - 20px);
+    }
+  }
+/* gallery section code end  */
 
 
 
