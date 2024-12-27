@@ -2462,6 +2462,9 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     .grid-item h2 {
       font-size: 14px;
     }
+    .aboutpage_aboutus_content h5,p{
+        text-align: start;
+    }
   }
 
 
