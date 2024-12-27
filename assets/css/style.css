@@ -2465,8 +2465,13 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     /* .aboutpage_aboutus_content h5,p{
         text-align: start;
     } */
+     .videotag video{
+        width: 100%;
+     }
   }
-
+.videotag{
+    margin-top: 20px;
+}
 
 
 
