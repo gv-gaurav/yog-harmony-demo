@@ -2406,14 +2406,63 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
 }
 
 
+  
 
 
 
 
-
-
-
-
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 15px;
+  }
+  .grid-item {
+    font-family: 'Karla', sans-serif;
+    /* background: #bd8ebe; */
+    background: #E0CCAC;
+    padding: 20px;
+    border: 0.1px solid black;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  .grid-item h2 {
+    font-size: 18px;
+    /* color: #ffffff; */
+    font-weight: 300;
+    color: #8D5180;
+    font-family: 'Karla', sans-serif;
+  }
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item h2 {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .grid-item h2 {
+      font-size: 14px;
+    }
+  }
 
 
 
