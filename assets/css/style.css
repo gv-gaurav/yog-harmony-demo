@@ -2496,7 +2496,7 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     gap: 20px;
   }
 
-  .box {
+  .boxi {
     flex: 1 1 calc(25% - 20px); /* 4 boxes per row */
     max-width: calc(25% - 20px);
     /* background-color: #f9f9f9; */
@@ -2509,12 +2509,12 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     /* cursor: pointer; */
   }
 
-  .box:hover {
+  .boxi:hover {
     transform: translateY(-5px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
-  .box img {
+  .boxi img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -2522,12 +2522,12 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     margin-bottom: 15px;
     transition: 0.2s;
   }
-  .box img:hover{
+  .boxi img:hover{
     border: 2px solid #774A7E;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
-  .box h3 {
+  .boxi h3 {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     color: #333;
@@ -2535,20 +2535,20 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(123,80,134,1) 49
     line-height: 25px;
   }
 
-  .box p {
+  .boxi p {
     font-size: 14px;
     color: #666;
   }
 
   @media (max-width: 768px) {
-    .box {
+    .boxi {
       flex: 1 1 calc(50% - 20px); /* 2 boxes per row */
       max-width: calc(50% - 20px);
     }
   }
 
   @media (max-width: 480px) {
-    .box {
+    .boxi {
       flex: 1 1 100%; 
       /* flex: 1 1 calc(50% - 20px); */
       /* max-width: calc(50% - 20px); */
