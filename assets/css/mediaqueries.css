@@ -137,7 +137,7 @@
         width: 190px;
     }
     .navbar-nav {
-        padding-left: 36px;
+        padding-left: 0px;
     }
     .navbar-nav li {
         margin: 0 14px 0 10px;
@@ -1559,7 +1559,7 @@
         right: -12px;
     }
     .subscribe_background_image .subscribe_image img {
-        width: 575px;
+        width: 280px;
     }
 
     .footer-section {
