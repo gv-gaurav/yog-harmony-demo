@@ -38,6 +38,8 @@
 </head>
 
 <body>
+    <div id="snackbar"></div>
+
 <div class="sub-banner-section">
     <header>
         <div class="main_header">
@@ -175,7 +177,7 @@
                     <h5>Get in Touch.</h5>
                     <h2>Send us a Message</h2>
                     <p>Have questions or want to join our yoga journey? Reach out to Yog Harmony—we’re here to guide you toward wellness and balance!</p>
-                    <form id="contactpage" method="POST" action="https://html.designingmedia.com/yogastic/contact-form.php">
+                    <form id="contactpage">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">    
@@ -389,5 +391,14 @@
 <script src="assets/js/animation.js"></script>
 <script src="https://unpkg.com/ityped@0.0.10"></script>
 <script src="assets/js/type.js"></script>
+
+<script type="module">
+    import { handleSubmitContactForm } from "./api/contactApi.js";
+    document.addEventListener("DOMContentLoaded", () => {
+      document
+        .getElementById("contactpage")
+        .addEventListener("submit", handleSubmitContactForm);
+    });
+  </script>
 </body>
 </html>
