@@ -72,7 +72,7 @@ p{
     background-position: center;
 }
 .main_header {    
-    padding: 42px 292px 0;
+    padding: 42px 200px 0;
 }
 .navbar-collapse ul{
     text-align: center;
@@ -216,7 +216,7 @@ p{
 /* Home Page Banner Section Style */
 
 .banner-section-outer .banner-section{
-    padding: 50px 292px 138px;
+    padding: 50px 210px 138px;
     position: relative;
 }
 .banner-section-outer .banner-section .banner-section-content{
